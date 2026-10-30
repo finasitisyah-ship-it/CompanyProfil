@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Website Fina</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="container text-center mt-5">
+        <h1 class="display-5 fw-bold">INFORMASI SEKOLAH FINA</h1>
+        <p class="lead">
+            kepala sekolah, walas, dan kaprok.
+        </p>
+
+        <!-- Tombol Modal -->
+        <button
+            type="button"
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+        >
+            Buka informasi
+        </button>
+
+        <!-- Tombol Tooltip -->
+        <button
+            type="button"
+            class="btn btn-warning"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Ini adalah tooltip!"
+        >
+            Klik di sini
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Selamat Datang!</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                    ></button>
+                </div>
+
+                <div class="modal-body">
+                    haii ini adalah website hasil fina.
+                </div>
+
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >
+                        Tutup
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="container mt-5">
+        <h2 class="mb-3">Accordion</h2>
+
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                    >
+                        apa itu BPM?
+                    </button>
+                </h2>
+
+                <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                >
+                    <div class="accordion-body">
+                        BPM Adalah singkatan dari SMK BINA PUTRA MANDIRI
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                    >
+                        siapa walas kelas XI.RPL?
+                    </button>
+                </h2>
+
+                <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                >
+                    <div class="accordion-body">
+                        Walas kelas XI.RPL adalah bapa sanndyana
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                    >
+                        siapa guru pemrogremen web di bpm?
+                    </button>
+                </h2>
+
+                <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                >
+                    <div class="accordion-body">
+                        guru pemrograman web kita adahal eka riana.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Collapse -->
+    <div class="container mt-5 mb-5">
+        <h2>Collapse</h2>
+
+        <p>
+            <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#informasi"
+            >
+                Tampilkan Informasi
+            </button>
+        </p>
+
+        <div class="collapse" id="informasi">
+            <div class="card card-body">
+                Haii saya siti syah fina dari kelas XI.RPL saya adalah murid dari smk bina putra mandiri
+                walas saya adalah paba danny
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-danger text-white text-center py-3">
+        <p class="mb-0">
+            &copy; 2026 Website Fina
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Script Tooltip -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll(
+            '[data-bs-toggle="tooltip"]'
+        );
+
+        [...tooltipTriggerList].map(
+            tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
+    </script>
+
+</body>
+</html>

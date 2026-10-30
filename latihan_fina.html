@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Studio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #fff0f5, #e9f3f8);
+            color: #67515e;
+        }
+
+        header {
+            background: #fffafd;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 3px 15px #d9a9bc30;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #bd7895;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #765d6b;
+            text-decoration: none;
+            padding: 10px 12px;
+            border-radius: 20px;
+            font-family: Arial, sans-serif;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #dba4ba;
+            color: white;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .page {
+            display: none;
+            padding: 45px 30px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            box-shadow: 0 8px 30px #bd78951a;
+        }
+
+        .page.active {
+            display: block;
+            animation: muncul 0.4s ease;
+        }
+
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #bd7895;
+            font-weight: normal;
+        }
+
+        h2 {
+            color: #bd7895;
+        }
+
+        p {
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+        .bunga {
+            font-size: 45px;
+            margin: 10px;
+        }
+
+        .quote {
+            background: #fff0f5;
+            border-radius: 18px;
+            padding: 25px;
+            margin: 25px 0;
+            line-height: 2;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #bd7895;
+            color: white;
+            padding: 12px 22px;
+            margin: 10px 5px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #98617b;
+            transform: translateY(-3px);
+        }
+
+        .kotak {
+            background: #fff5f8;
+            padding: 20px;
+            margin: 18px 0;
+            border-radius: 15px;
+        }
+
+        .contoh-font {
+            font-family: cursive;
+            font-size: 25px;
+            color: #9d7296;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #9b7c8b;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .page {
+                padding: 30px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BLOOM STUDIO ♡</div>
+
+    <nav>
+        <a href="#home" data-page="home" class="active">Home</a>
+        <a href="#background" data-page="background">Background</a>
+        <a href="#text" data-page="text">Text</a>
+        <a href="#font" data-page="font">Font</a>
+        <a href="#links" data-page="links">Links</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HALAMAN HOME -->
+    <section id="home" class="page active">
+        <div class="bunga">🌷</div>
+
+        <h1>Dunia ku,<br>Cerita kku</h1>
+
+        <p>
+            Hai! selamat datang di dunia kecil ku, aku
+            adalah seseorang yang masih belajar, bertumbuh dan
+            menemukan hal-hal baru tentang diriku sendiri, dan aku
+            percaya bahwa setiap hari adalah kesempatan untuk mrnjadi versi
+            diriku yang lebi baik.
+        </p>
+
+        <div class="quote">
+            <em>
+                "Tumbuhlah dengan caramu sendiri,
+                tidak perlu terburu-buru,
+                sebab setiap bunga memiliki
+                waktunya untuk mekar."
+            </em>
+        </div>
+
+        <p>Selamat datang di Dunia ku Cerita ku ♡</p>
+
+        <a href="#background" data-page="background" class="btn">
+            Mulai Menjelajah ✿
+        </a>
+    </section>
+
+    <!-- HALAMAN BACKGROUND -->
+    <section id="background" class="page">
+        <div class="bunga">🎨</div>
+
+        <h1>Tentang Diriku</h1>
+
+        <p>
+            Aku adalah orang yang ceria, suka bercanda, dan senang membuat suasana menjadi lebih menyenangkan,
+            dan aku menyukai warna pink pastel dan hoby ku bernyanyi. 
+            Aku suka tertawa bersama teman-teman dan menikmati momen-momen kecil yang bisa membuat hariku lebih berwarna.
+            Bagiku, menjadi diri sendiri itu penting. Aku masih terus belajar, berkembang, 
+            dan mencoba menjadi pribadi yang lebih baik setiap harinya.
+            Aku memang belum sempurna, tetapi aku selalu punya keinginan untuk terus maju dan meraih hal-hal yang aku impikan.
+        </p>
+
+        <div class="kotak" style="background-color: #ffe4ec;">
+            <h2>Pink Pastel</h2>
+            <p>Melambangkan kelembutan dan kasih sayang.</p>
+        </div>
+
+        <div class="kotak" style="background-color: #dcebf7;">
+            <h2>Bernyanyi</h2>
+            <p>Bernyanyi adalah cara sederhana untuk menikmati waktu.</p>
+        </div>
+
+
+        <a href="#text" data-page="text" class="btn">
+            Selanjutnya: Text →
+        </a>
+    </section>
+
+    <!-- HALAMAN TEXT -->
+    <section id="text" class="page">
+        <div class="bunga">🦋</div>
+
+        <h1>Impian ku</h1>
+
+        <p>
+            Aku adalah orang yang ceria, suka bercanda, dan senang membuat suasana menjadi lebih menyenangkan.
+             Aku suka tertawa bersama teman-teman dan menikmati momen-momen kecil yang bisa membuat hariku lebih berwarna.
+            Bagiku, menjadi diri sendiri itu penting. Aku masih terus belajar, berkembang,
+             dan mencoba menjadi pribadi yang lebih baik setiap harinya.
+            Aku memang belum sempurna, tetapi aku selalu punya keinginan untuk terus maju dan meraih hal-hal yang aku impikan.
+        </p>
+
+        <div class="quote">
+            <h2>Untuk Diriku</h2>
+
+            <p style="text-align: center; color: #bd7895;">
+                "Tidak apa-apa berjalan perlahan,
+                selama kamu tidak berhenti
+                memperjuangkan impianmu."
+            </p>
+        </div>
+
+        <p style="color: #8d7080; text-align: left;">
+            Belajarlah menghargai proses.
+            Tidak semua hal harus selesai hari ini.
+            Berikan dirimu waktu untuk belajar,
+            beristirahat, dan kembali mencoba.
+        </p>
+
+        <a href="#font" data-page="font" class="btn">
+            Selanjutnya: Font →
+        </a>
+    </section>
+
+    <!-- HALAMAN FONT -->
+    <section id="font" class="page">
+        <div class="bunga">✍️</div>
+
+        <h1>Font</h1>
+
+        <p>
+            Setiap huruf memiliki karakter,
+            seperti setiap orang memiliki keunikan.
+        </p>
+
+        <div class="kotak">
+            <p style="font-family: Arial;">
+                Kesederhanaan adalah keindahan.
+            </p>
+
+            <p class="contoh-font">
+                Jadilah versi terbaik dirimu.
+            </p>
+
+            <p style="font-weight: bold;">
+                Tetap kuat, tetap bertumbuh.
+            </p>
+        </div>
+
+        <a href="#links" data-page="links" class="btn">
+            Selanjutnya: Links →
+        </a>
+    </section>
+
+    <!-- HALAMAN LINKS -->
+    <section id="links" class="page">
+        <div class="bunga">♡</div>
+
+        <h1>Links</h1>
+
+        <p>
+            Setiap perjalanan dimulai dari satu langkah.
+            Temukan hal-hal baru yang membuatmu
+            terus belajar dan bertumbuh.
+        </p>
+
+        <div class="quote">
+            <h2>Keep Growing ✿</h2>
+            <p>
+                "Jangan bandingkan perjalananmu
+                dengan perjalanan orang lain.
+                Setiap orang punya waktunya sendiri."
+            </p>
+        </div>
+
+        <a href="https://www.google.com"
+           target="_blank"
+           rel="noopener"
+           class="btn">
+            Jelajahi Google ↗
+        </a>
+
+        <br>
+
+        <a href="#home" data-page="home" class="btn">
+            Kembali ke Home ↑
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    <p>♡ Bloom Studio — Tumbuh, Mekar, dan Bersinar ♡</p>
+</footer>
+
+<script>
+    const menu = document.querySelectorAll("[data-page]");
+    const pages = document.querySelectorAll(".page");
+
+    function tampilkanHalaman(id) {
+        if (!document.getElementById(id)) {
+            id = "home";
+        }
+
+        pages.forEach(function(halaman) {
+            halaman.classList.toggle(
+                "active",
+                halaman.id === id
+            );
+        });
+
+        document.querySelectorAll("nav a").forEach(function(link) {
+            link.classList.toggle(
+                "active",
+                link.dataset.page === id
+            );
+        });
+    }
+
+    menu.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            const tujuan = this.dataset.page;
+
+            history.pushState(null, "", "#" + tujuan);
+            tampilkanHalaman(tujuan);
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    });
+
+    window.addEventListener("popstate", function() {
+        tampilkanHalaman(location.hash.slice(1) || "home");
+    });
+
+    tampilkanHalaman(location.hash.slice(1) || "home");
+</script>
+
+</body>
+</html>
